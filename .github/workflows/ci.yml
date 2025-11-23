@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Make script executable
+        run: chmod +x script.sh
+
+      - name: Test script commands
+        run: |
+          ./script.sh create test.txt
+          ./script.sh update test.txt
+          ./script.sh delete test.txt
+
+      - name: Pipeline terminé
+        run: echo "CI OK"
