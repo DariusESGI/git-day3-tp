@@ -24,3 +24,4 @@ case "$1" in
         ;;
 esac
 "# Version LTS" 
+"# Nouvelle fonctionnalit‚ ajout‚e dans la branche feature" 
