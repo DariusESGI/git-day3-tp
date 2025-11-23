@@ -1,13 +1,13 @@
 #!/bin/bash
 
 create() {
-    echo "CrÃ©ation du fichier $1"
+    echo "Création du fichier $1"
     touch "$1"
 }
 
 update() {
-    echo "Mise Ã  jour du fichier $1"
-    echo "Mise Ã  jour effectuÃ©e" >> "$1"
+    echo "Mise à jour du fichier $1"
+    echo "Mise à jour effectuée" >> "$1"
 }
 
 delete() {
@@ -23,5 +23,3 @@ case "$1" in
         echo "Usage : $0 {create|update|delete} fichier"
         ;;
 esac
-"# Version LTS" 
-"# Nouvelle fonctionnalit‚ ajout‚e dans la branche feature" 
